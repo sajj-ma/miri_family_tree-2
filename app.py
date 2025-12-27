@@ -90,7 +90,7 @@ if submit and name:
     st.rerun()
 
 # --- رسم نمودار ---
-st.title("🌳 شجره‌نامه تعاملی میری")
+st.title("🌳 شجره‌نامه تعاملی خاندان میری")
 if not df.empty:
     dot = Digraph(format='png')
     dot.attr(rankdir='TB', splines='ortho')
@@ -125,4 +125,5 @@ if not df.empty:
 
     st.graphviz_chart(dot)
 else:
+
     st.info("هنوز اطلاعاتی وارد نشده است. از منوی سمت راست اولین نفر را اضافه کنید.")
